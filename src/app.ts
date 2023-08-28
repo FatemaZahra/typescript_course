@@ -1,14 +1,31 @@
-// const anchor = document.querySelector("a")!;
+//classes
+class Invoice {
+  client: string;
+  details: string;
+  amount: number;
 
-// // if (anchor) {
-// //   console.log(anchor.href);
-// // }
+  constructor(c: string, d: string, a: number) {
+    this.client = c;
+    this.details = d;
+    this.amount = a;
+  }
+  format() {
+    return `${this.client} owes £{this.amount} for ${this.details}`;
+  }
+}
 
-// console.log(anchor.href);
+const invOne = new Invoice("mario", "work on the mario website", 250);
+const invTwo = new Invoice("luigi", "work on the luigi website", 300);
 
-//const form = document.querySelector("form")!; //! can we used when we know that form exists
-//const form = document.querySelector(".new-item-form")!; //shows type Element because a class could be applied to any different element on a page
+console.log(invOne, invTwo);
 
+//let invoices: string[] = [];
+let invoices: Invoice[] = [];
+invoices.push(invOne);
+invoices.push(invTwo);
+
+invOne.client = "yoshi";
+console.log(invOne);
 const form = document.querySelector(".new-item-form") as HTMLFormElement;
 //console.log(form.children);
 
