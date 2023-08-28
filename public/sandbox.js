@@ -1,15 +1,10 @@
 "use strict";
-let greet;
-greet = () => {
-    console.log("hello, world!");
+const logDetails = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
 };
-const add = (a, b, c = 10) => {
-    console.log(a + b);
-    console.log(c);
+const greet = (user) => {
+    console.log(`${user.name} says hello`);
 };
-add(5, 10, "20");
-// A function return void when we don't return anything in the function
-const subtract = (a, b) => {
-    return a + b;
+const greetAgain = (user) => {
+    console.log(`${user.name} says hello`);
 };
-let result = subtract(10, 7);

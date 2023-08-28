@@ -1,17 +1,13 @@
-let greet: Function;
-greet = () => {
-  console.log("hello, world!");
+type StringorNum = string | number;
+type objWithName = { name: string; uid: StringorNum };
+
+const logDetails = (uid: StringorNum, item: string) => {
+  console.log(`${item} has a uid of ${uid}`);
+};
+const greet = (user: objWithName) => {
+  console.log(`${user.name} says hello`);
 };
 
-const add = (a: number, b: number, c: number | string = 10) => {
-  console.log(a + b);
-  console.log(c);
+const greetAgain = (user: objWithName) => {
+  console.log(`${user.name} says hello`);
 };
-add(5, 10, "20");
-// A function return void when we don't return anything in the function
-
-const subtract = (a: number, b: number) => {
-  return a + b;
-};
-
-let result = subtract(10, 7);
