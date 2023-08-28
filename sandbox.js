@@ -1,29 +1,26 @@
+//explicit types
+var character;
+var age;
+var isLoggedIn;
+//age = "luigi";
+age = 35;
+//isLoggedIn = 34;
+isLoggedIn = true;
 //Arrays
-var names = ["luigi", "mario", "yashi"];
-//names = "hello";
-names.push("toad");
-//names.push(3);
-//names[0] = 3;
-var numbers = [10, 20, 30, 40];
-numbers.push(25);
-// numbers.push("me");
-// numbers[1] = "me";
-var mixed = ["ken", 4, "chun-li", 8, 9];
-mixed.push("ryu");
-mixed.push(10);
-mixed[0] = 3;
+var ninjas = []; //to be able to push
+ninjas = ["10", "20"];
+ninjas.push("shaun");
+//Union types
+var mixed = [];
+mixed.push("hello");
+mixed.push(20);
+mixed.push(false);
+console.log(mixed);
+var uid;
+uid = 123;
+uid = "123";
 //Objects
-var ninja = {
-    name: "mario",
-    belt: "black",
-    age: 40,
-};
-ninja.age = 40;
-ninja.name = "ryu";
-//ninja.age = "50";
-//ninja.skills = ["fighting", "sneaking"];
-ninja = {
-    name: "yoshi",
-    belt: "orange",
-    age: 40,
-};
+var ninjaOne;
+ninjaOne = { name: "fama", age: 25 };
+ninjaOne = [];
+var ninjaTwo;

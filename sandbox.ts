@@ -1,37 +1,33 @@
+//explicit types
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
+
+//age = "luigi";
+age = 35;
+
+//isLoggedIn = 34;
+isLoggedIn = true;
+
 //Arrays
-let names = ["luigi", "mario", "yashi"];
-//names = "hello";
+let ninjas: string[] = []; //to be able to push
+ninjas = ["10", "20"];
+ninjas.push("shaun");
 
-names.push("toad");
-//names.push(3);
-//names[0] = 3;
+//Union types
+let mixed: (string | number | boolean)[] = [];
+mixed.push("hello");
+mixed.push(20);
+mixed.push(false);
+console.log(mixed);
 
-let numbers = [10, 20, 30, 40];
-
-numbers.push(25);
-// numbers.push("me");
-// numbers[1] = "me";
-
-let mixed = ["ken", 4, "chun-li", 8, 9];
-mixed.push("ryu");
-mixed.push(10);
-mixed[0] = 3;
+let uid: string | number;
+uid = 123;
+uid = "123";
 
 //Objects
+let ninjaOne: object;
+ninjaOne = { name: "fama", age: 25 };
+ninjaOne = [];
 
-let ninja = {
-  name: "mario",
-  belt: "black",
-  age: 40,
-};
-
-ninja.age = 40;
-ninja.name = "ryu";
-//ninja.age = "50";
-//ninja.skills = ["fighting", "sneaking"];
-
-ninja = {
-  name: "yoshi",
-  belt: "orange",
-  age: 40,
-};
+let ninjaTwo: {};
